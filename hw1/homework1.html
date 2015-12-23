@@ -1,0 +1,590 @@
+<html>
+<head>
+<style type="text/css">
+
+body {background-image: url(2.jpg);
+
+font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #4A513D;
+}
+img.girl{
+  position: absolute;
+  right: 150px;
+  top: 100px;
+}
+img.fly{
+  position: absolute;
+  left: 130px;
+  top: 160px;
+}
+img.tree{
+  position: absolute;
+  left: 170px;
+  top: 380px;
+}
+ol.d {
+    list-style-type: lower-alpha;
+}
+div.order{
+background-image:url(8.gif);
+width: 600px;
+position: absolute;
+left: 400px;
+}
+div.information{
+background-image:url(1.jpg);
+width: 550px;
+position: absolute;
+left: 450px;
+}
+div.privite{
+  position: absolute;
+  left: 350px;
+  width: 750px;
+  text-align:center;
+  font-size: 20px;
+  background-image:url(5.gif);
+  background-repeat:repeat-x; 
+  top: 100px;
+  height: 500px;
+}
+div.public{
+  position: absolute;
+  left: 350px;
+  width: 750px;
+  text-align:center;
+  font-size: 20px;
+  background-image:url(1.jpg);
+  top:70px;
+  height: 500px;
+}
+</style>
+</head>
+
+
+<body>
+<img class="girl" src="3.gif" />
+<img class="fly" src="7.gif" />
+<img class="tree" src="4.gif" />
+<div id="div1" class = "order" style="display:block">
+<h2>Welcome to Our Store!!</h2>
+<form name="form1">
+<ol class="d">
+
+Account name:<input type="text" name="count" value=" "/>&nbsp;<font color="#FF0000">(need)</font><br>
+<li><b>What kind of book do you want?</b>&nbsp;&nbsp;<font color="#FF0000">(need)</font></li>
+
+<p>
+<input type="radio" name="book" value="Businessbook"/>&nbsp;Businessbook
+<input type="radio" name="book" value="Cookingbook"/>&nbsp;Cookingbook
+<input type="radio" name="book" value="Filmbook"/>&nbsp;Filmbook
+<input type="radio" name="book" value="Historybook"/>&nbsp;Historybook
+<input type="radio" name="book" value="Nonebook"/>&nbsp;Nonebook
+</p>
+
+<li><b>What kind of Other things do you want?</b></li>
+<p>
+equipment:
+<select name="equipment">
+<option value="0">-equipment-</option>
+<option value="1">Computer</option>
+<option value="2">Cellphone</option>
+<option value="3">Ipod</option>
+<option value="4">Ipad</option>
+<option value="5">Earphone</option>
+</select>
+&nbsp;&nbsp;<font color="#FF0000">(need)</font>
+<br><br>
+Other:
+<select id= "s" name="item">
+<option>basketball</option>
+<option>football</option>
+<option>skateboard</option>
+<option>Usclogo</option>
+<option>Cup</option>
+</select>
+&nbsp;
+<input onChange="addOption(document.getElementById('t'))" type="text" id="t" style="width:70px;"/>
+<font color="#FF0000">(can input selection!)</font>
+<br>
+More:
+<select id= "m" name="more">
+<option>Shoes</option>
+<option>Pen</option>
+<option>Pencil</option>
+<option>Notebook</option>
+<option>Ink</option>
+</select>
+&nbsp;
+<input onChange="addOption1(document.getElementById('te'))" type="text" id="te" style="width:70px;"/>
+<font color="#FF0000">(can input selection!)</font>
+</p>
+
+<li><b>What kind of cloth do you want?</b>&nbsp;&nbsp;<font color="#FF0000">(need)</font></li>
+<p>
+<input type="checkbox" name="cloth" value="cap"/>&nbsp;Cap
+<input type="checkbox" name="cloth" value="shirt"/>&nbsp;Shirt
+<input type="checkbox" name="cloth" value="pants"/>&nbsp;Pants
+<input type="checkbox" name="cloth" value="shorts"/>&nbsp;Shorts
+</p>
+
+<li><b>Do you need any stationery?</b></li>
+<p>
+<input type ="checkbox" name = "stationery" value ="pen"/>&nbsp;Pen
+<input type ="checkbox" name = "stationery" value ="pencil"/>&nbsp;Pencil 
+<input type ="checkbox" name = "stationery" value ="notebook"/>&nbsp;Notebook
+<input type ="checkbox" name = "stationery" value ="eraser"/>&nbsp;Eraser
+</p>
+
+
+
+
+<li><b>Choose the time item arrived</b>&nbsp;&nbsp;</li>
+<p>Day
+<select name="day" onchange="choosetime()">
+<option value="0">-Anytime-</option>
+<option value="1">Monday</option>
+<option value="2">Tuesday</option>
+<option value="3">Wendsday</option>
+<option value="4">Thursday</option>
+<option value="5">Friday</option>
+</select>
+Time
+<select name="hour" disabled="disabled">
+</select>
+</p>
+</ol>
+
+<h2>Other require:</h2>
+<ul>
+<b>You think our commodity is?</b>
+<p>
+<input type ="checkbox" name = "help" value ="cheap"/> Cheap
+<input type ="checkbox" name = "help" value ="useful"/> Useful
+<input type ="checkbox" name = "help" value ="convenient"/> Convenient
+<input type ="checkbox" name = "help" value ="beautiful"/> Beautiful
+</p>
+
+<b>Choose citys where we can help you?</b>
+<p>
+<input type ="checkbox" name = "city" value ="NewYork"/> NewYork 
+<input type ="checkbox" name = "city" value ="Losangeles"/> Los Angeles 
+<input type ="checkbox" name = "city" value ="Washington"/> Washington
+<input type ="checkbox" name = "city" value ="HonKong"/> HonKong
+<input type ="checkbox" name = "city" value ="SanFrancisco"/> San Francisco
+</p>
+
+<b>Choose one gift for you</b>
+<p>
+<input type="radio" name="gift" value="money"/>500$ MONEY
+<input type="radio" name="gift" value="bike"/>A Bike
+<input type="radio" name="gift" value="bag"/>A beautiful Bag
+<input type="radio" name="gift" value="car"/>A Car 
+<input type="radio" name="gift" value="tshirt"/>A T-shirt 
+</p>
+</ul>
+
+<p style ="text-align:center;">
+<input type = "button" onClick = "next()" value = "Submit"/> 
+
+</p>
+</form>
+</div>
+
+
+<div id="div2" style="display:none" class = "information">
+<form name="form2">
+<h2 align=center>Your Private Information</h2>
+<p align=center><b>Private Data</b><br></br></p>
+<p>
+<ul>
+	First Name: <input type="text" name="fname" style="width:100px;"/><font color="#FF0000">(need) Please input English!</font>
+	<br>
+Last Name: <input type="text" name="lname" style="width:100px;"/>
+</ul>
+</p>
+<p>
+<ul>
+Your Are: 
+<input type="radio" name="student" value="Master student">Master student
+<input type="radio" name="student" value="Phd student">Phd student
+<input type="radio" name="student" value="Staff">staff
+<input type="radio" name="student" value="Faculty">faculty
+
+<br>Birthday:&nbsp;&nbsp;&nbsp; <input type = "text" name = "birthday" onBlur= "checkDate()" onfocus = "clearDate()" maxlength="60"/>&nbsp;<font color="#FF0000">(need) Type: mm-yy-year</font>
+<br>Telephone: <input type="text" name="telephone"onBlur= "checkTelephone()" maxlength="60"/>
+&nbsp;<font color="#FF0000">(need) Type: 10 number</font>
+<br>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email"onBlur= "checkEmail()" maxlength="60"/>&nbsp;<font color="#FF0000">(need) Type: xxxx@xxxx</font>
+</ul>
+</p>
+
+<br>
+<p align=center><b>Your Address</b></p>
+
+
+<p>
+<ul>
+Address 1: <input type="text"  name="address1" maxlength="150" style="width:250px;"/>
+
+<br>Address 2: <input type="text" name="address2" maxlength="100"style="width:250px;"/>
+
+<br>City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city1" maxlength="60"/>
+
+<br>State: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="state" maxlength="60"/>
+
+<br><br><br>
+<b>Could you do a evaluation to Us?</b>
+<p>
+<input type="radio" name="evaluation" value="Verygood">Very good
+<input type="radio" name="evaluation" value="Good">Good
+<input type="radio" name="evaluation" value="Medium">Medium
+<input type="radio" name="evaluation" value="Bad">Bad 
+<input type="radio" name="evaluation" value="Verybad">Verybad 
+</p>
+
+<br>Comment:
+<br><textarea cols = "60" rows = "5" name ="comments"></textarea>
+</ul>
+<br>
+</p>
+
+<p align=center>
+<input type = "button" onClick="report1()" value = "ToReport1">
+<input type="button" onClick="report2()" value ="Report2">
+</p>
+</form>
+</div>
+
+<div id = "div3" style="display:none" class = "public">
+<p id = "report1"> user data of the first form</p>
+<br><br>
+
+<input type="button" onClick = "back()" value ="Toform1"/>
+<input type = "button" onClick="gotoform2()" value="Next"/>
+</div>
+
+<!--second report-->
+<div id = "div4" style = "display:none" class = "privite">
+<h3>Report2: private data</h3>
+<p id = "report2">Private data</p>
+<br><br> 
+<input type="button" onClick="report1()" value ="Report1"/>
+<input type="button" onClick = "gotoform2()" value =" Toform2"/>
+
+</div>
+
+
+<script language="javascript">
+
+var data1=[];
+var data2=[];
+var z=0;
+var welcome;
+
+function choosetime(){
+with(document.form1){
+  var hours = new Array();
+  hours[0]=["9am-11am","11am-1pm","1am-3pm","3am-5pm","5am-7pm"];
+  hours[1]=["9am-11am","11am-1pm","1am-3pm","3am-5pm","5am-7pm"];
+  hours[2]=["9am-11am","11am-1pm","1am-3pm","3am-5pm","5am-7pm"];
+  hours[3]=["9am-11am","11am-1pm","1am-3pm","3am-5pm","5am-7pm"];
+  hours[4]=["9am-11am","11am-1pm","1am-3pm","3am-5pm","5am-7pm"];
+  hours[5]=["9am-11am","11am-1pm","1am-3pm","3am-5pm","5am-7pm"];
+
+  var value = day.value;
+  hour.options.length = 0;
+  var option;
+
+  for(i = 0;i < hours[value].length;i++)
+    {
+     option = new Option(hours[value][i],hours[value][i]);
+     hour.options.add(option);
+    }
+    if(day.value == "0")
+     hour.disabled = true;
+    else
+     hour.disabled = false;
+   }
+  }
+
+function next(){
+  if(gotor1()){
+    report1();
+  }
+}
+
+
+function gotor1()
+{ 
+  var count =document.form1.count.value;
+  var book=document.form1.book;
+  var equipment=document.form1.equipment.value;
+  var cloth=document.form1.cloth;
+  var day=document.form1.day.value;
+  var hour=document.form1.hour.value;
+  var box=0;
+  var select=0;
+  var radio=0;
+  var text=0;
+
+  if(count!=""){text=1;}
+
+  for(i = 0; i< book.length; i++){
+        if(book[i].checked){
+          radio=1;
+        }
+      } 
+
+  for(i = 0; i< cloth.length; i++){
+        if(cloth[i].checked){
+          box=1;
+        }
+      }
+
+  if(equipment!=0){select=1;}
+
+  if(radio==1 && box==1 && select==1 &&text==1) 
+  { 
+    data1[z]="";
+    data1[z]+=count+": ";
+    welcome=count;
+    for(j = 0; j< book.length; j++)
+    { 
+      if(book[j].checked)
+      {
+          data1[z]+=book[j].value+", ";
+      }
+    } 
+    data1[z]+=document.form1.equipment.options[document.form1.equipment.selectedIndex].text+", ";
+    data1[z]+=document.form1.day.options[document.form1.day.selectedIndex].text;
+    data1[z]+=document.form1.hour.value;
+    z=z+1;
+    return true;
+  } else {
+    window.alert("Please input the information");
+  }
+}
+
+function otherReport () {
+  alert("Sorry, but you have no access to other people's information.");
+}
+
+
+function report1(){
+    var Form = "Report1: Welcome User: "+welcome+"<br>"+"<br>";
+    for(i=0; i<data1.length-1; i++){
+      Form += data1[i] +"<button onClick='otherReport()'>Private</button><br>";
+    }
+    Form += data1[i] + "<button onClick='report2()'>Private</button><br>";
+    var reportPage = document.getElementById("report1");
+    reportPage.innerHTML = Form;
+    d1=document.getElementById("div1");
+    d2=document.getElementById("div2");
+    d3=document.getElementById("div3");
+    d4=document.getElementById("div4");
+    d1.style.display="none";
+    d2.style.display="none";
+    d3.style.display="block";
+    d4.style.display="none";
+}
+
+function veriform2()
+{
+
+ var fn=document.form2.fname.value;
+ var ln=document.form2.lname.value;
+ var student=document.form2.student;
+ var evaluation=document.form2.evaluation;
+
+for (i = 0; i <13 ;i++)
+    {data2[i]="";}
+
+if(firstname())
+{
+  data2[0]=document.form2.fname.value;
+  data2[1]=document.form2.lname.value;
+  if(checkDate())
+  {
+   data2[3]=document.form2.birthday.value;
+   if(checkTelephone())
+   {
+    data2[4]=document.form2.telephone.value;
+    if(checkEmail())
+      {
+       data2[5]=document.form2.email.value;
+       for(i = 0; i< student.length; i++)
+       {
+        if(student[i].checked)
+        {
+          data2[2]=student[i].value;
+        }
+       }
+       data2[6]=document.form2.address1.value;
+       data2[7]=document.form2.address2.value;
+       data2[8]=document.form2.city1.value;
+       data2[9]=document.form2.state.value;
+       for(i = 0; i< evaluation.length; i++)
+       {
+        if(evaluation[i].checked)
+        {
+          data2[10]=evaluation[i].value;
+        }
+       }
+       if(document.form2.comments.value!="") data2[11]=document.form2.comments.value;
+       return true;
+      }else return false;
+    }else return false;
+  }else return false;
+}else return false;
+
+}
+
+
+
+  
+function report2()
+{
+ d3=document.getElementById("div3");
+ if(d3.style.display=="block"&&!veriform2())
+ {
+  window.alert("Need fill the second form first.");
+  d2=document.getElementById("div2");
+  d3.style.display="none";
+  d2.style.display="block";
+  }
+ else
+ {
+    if(veriform2()){
+    var Dataof2 = "";
+
+Dataof2="Name: "+data2[0]+" "+data2[1]+"<br>"+"Identity:"+data2[2]+"<br>"+
+        "Birthday: "+data2[3]+"<br>"+
+        "Telephone: "+data2[4]+"<br>"+
+        "Email: "+data2[5]+"<br>"+"<br>"+"Other information:"+"<br>"+
+        "Address: "+data2[6]+", "+data2[7]+"<br>"+data2[8]+", "+data2[9];
+
+   if(data2[10]){
+      Dataof2+="<br>"+"<br>"+"Your evaluation: "+data2[10];
+                }
+   if(data2[11]){
+      Dataof2+="<br>"+"<br>"+"Your Comments:<br>"+data2[11];
+                }
+
+    var report2 = document.getElementById("report2");
+    report2.innerHTML = Dataof2;
+    d2=document.getElementById("div2");
+    d3=document.getElementById("div3");
+    d4=document.getElementById("div4");
+    d2.style.display="none";
+    d3.style.display="none";
+    d4.style.display="block";
+  }else window.alert("Please finish the form."); 
+ }
+}
+
+
+
+function firstname(){
+  var fname=document.form2.fname.value;
+  if(fname!=""){
+  var validation=/^[A-Za-z]+$/;
+  if(!validation.test(fname)){
+    window.alert("Please enter a right name.");
+    return false;
+    }else return true;
+  }else{ return false;}
+}
+
+
+function checkDate(){
+  var birthday= document.form2.birthday.value;
+  var validation = /^(\d{2})[-\/](\d{2})[-\/](\d{4})$/.exec(birthday);
+  if (validation == null){
+    window.alert("Please enter a right birthday like yyyy-mm-dd");
+    return false;
+  }else return true;
+}
+
+
+function checkEmail(){
+  var email = document.form2.email.value;
+  if(email != ""){
+    var validation = /\S+@\S+\.\S+/;
+    if (!validation.test(email)){
+      window.alert("Please enter a right email address.");
+      return false;
+    }else return true;
+  }else return false;
+}
+
+function checkTelephone(){
+  var telephone=document.form2.telephone.value;
+  if(telephone!=""){
+  var validation=/\d{10}$/;
+  if(!validation.test(telephone)){
+    window.alert("Please enter a right telephone number.");
+    return false;
+    }else return true;
+  }else{ return false;}
+}
+
+function back(){
+  d1=document.getElementById("div1");
+  d2=document.getElementById("div2");
+  d4=document.getElementById("div4");
+  d3=document.getElementById("div3");
+  d2.style.display="none";
+  d3.style.display="none";
+  d1.style.display="block";
+  d4.style.display="none";
+}
+
+function addOption( textElem ) {
+  //Get a reference to the Select object
+  var selElement = document.getElementById( "s" );
+
+  //Create a new option element
+  optElement = document.createElement( "option" );
+
+  //Set the text and value of the option element
+  optElement.text = textElem.value;
+  optElement.value = textElem.value;
+
+  //Add the option element to the end of the select list
+  selElement.add( optElement );
+}
+
+function addOption1( textElem ) {
+  //Get a reference to the Select object
+  var selElement = document.getElementById( "m" );
+
+  //Create a new option element
+  optElement = document.createElement( "option" );
+
+  //Set the text and value of the option element
+  optElement.text = textElem.value;
+  optElement.value = textElem.value;
+
+  //Add the option element to the end of the select list
+  selElement.add( optElement );
+}
+
+
+  function gotoform2()
+  {
+  d1=document.getElementById("div1");
+  d2=document.getElementById("div2");
+  d4=document.getElementById("div4");
+  d3=document.getElementById("div3");
+  d2.style.display="block";
+  d3.style.display="none";
+  d1.style.display="none";
+  d4.style.display="none";
+  }
+
+
+
+</script>
+</body>
+</html>

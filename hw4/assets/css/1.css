@@ -1,0 +1,192 @@
+*{margin:0; padding:0; font-family: Verdana,Arial,
+	"Helvetica Neue",Helvetica,sans-serif; font-size:12px; line-height:20px;}
+li{list-style-type:none}
+.wrap {width:80%; height:100%;margin:0 auto;}
+.naver a {padding:5px; font-weight:bold}
+.price {color:#990000;}
+li.li1 {float:left; width:10%; padding-top:10px; height:150px; overflow:hidden; margin-right:0px; }
+li.li2 {float:left; width:120px; padding-top:6px;padding-bottom:6px; height:130px; overflow:hidden; margin-right:0px; }
+li.li3 {float:left; width:160px; padding-top:10px; height:200px; overflow:hidden; margin-right:8px; }
+div.bottom{margin-top:20px;margin-bottom:20px;
+            height:100px;width:100%;
+            background-repeat:repeat-x;}
+.clr {
+	clear:both;
+	border-bottom:1px dashed #ccc;
+	text-align:center;
+	padding:10px 0;
+}
+.totitle{font-size:3.4em;}
+.totitle1{font-size:1.5em;font-style:italic;color:#8E8E8E;display: block;}
+img.headerlogo{width:100%;display: none;}
+.title 
+{clear:both; 
+ font-size:15px;
+ font-weight:bold; 
+ border-bottom:2px #CCCCCC solid;
+ margin-top: 10px; 
+ margin-bottom:15px; }
+.hp1{font-size:1.3em;margin-bottom:0.3em;}
+.loginhead1{font-size:1.4em;}
+.logotable{height: 60px;width: 100%}
+div.insert{margin-top:15em;margin-bottom:1em;height:10%;width:100%;background:#C2FF68;background-repeat:repeat-x;}
+.bigp{font-size:18px;}
+img.img1{width:65%; height:60%;
+     }
+img.img2{width:55%;
+       height:50%;
+     }
+     img.img3{width:50%;
+       height:50%;
+     }
+ .ptitle{font-size:20px;text-align:center;margin-bottom:5px;}
+.products a {text-decoration:none;}
+table {border-collapse:collapse;}
+body{
+	background: #F0F0F0;
+}
+div.inner1{
+  margin-left:55px;
+  margin-top: 5%;
+  width:80%; 
+  height:300px;
+  border:1px solid #009966;
+  background: #FFF4C1;
+}
+div.inner4{
+  width:100%; 
+  height:25px;
+  background: #8C8C00;
+}
+div.logindiv{width:40%;float:right;}
+
+div.cart1{width:60%;float:left;}
+.pcart1{text-align:center;font-size:1.8em;margin-bottom:0.8em;}
+.cartfont{text-align:center;font-size:1.5em;}
+.cartul{float:left;width:45%;float:right;}
+.cartli{font-size:1.3em;color:#FF4500;}
+img.img4{float:left; width:45% ;height:40%;margin-left:10px;}
+div.login{margin-top:10px;width:55%;height:60%;float:left;border-style:solid;border-width:3px;border-color: #F4A460;}
+.logintable{width:60%;margin:10%;}
+.logintext{width: 100%;}
+.logintable1{font-size:18px;color:red;}
+.logintable2{font-size:15px;}
+.loginbutton{width:100px;margin-left:30px;}
+a.two{
+  color:blue;
+  font-size:1.2em;
+}
+a.two:hover{ color: blue}
+a.one{
+  color:green;
+  font-size:1.5em;
+  padding-left: 1em;
+}
+a.one:hover{ color: #FF00FF;}
+.headlink{text-align:center;
+           display:block;}
+.headerselect{display:none;height:30px; width: 40%; line-height: 25px;}
+div.ordertable{width:60%;float:left;}
+div.registerdiv{width:25%;height:100%;float:right;}
+form.registerform{width:60%;float:left;background:#FFED97;}
+div.accountdiv{float:right;width:30%;height:50%;}
+form.accountform{float:left;background:#fedcbd;height:60%;width:60%;}
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+  *{margin:0; padding:0; font-family: Verdana,Arial,
+  "Helvetica Neue",Helvetica,sans-serif; font-size:12px; line-height:20px;}
+li{list-style-type:none}
+.wrap {width:80%; margin:0 auto;}
+.naver a {padding:5px; font-weight:bold}
+.price {color:#990000;}
+li.li1 {float:left; width:10%; padding-top:10px; height:150px; overflow:hidden; margin-right:0px; }
+li.li2 {float:left; width:120px; padding-top:6px;padding-bottom:6px; height:130px; overflow:hidden; margin-right:0px; }
+li.li3 {float:left; width:100px; padding-top:6px; height:150px; overflow:hidden; margin-right:3px; }
+.clr {
+  clear:both;
+  border-bottom:1px dashed #ccc;
+  text-align:center;
+  padding:10px 0;
+}
+.totitle{font-size:15px;display: none;}
+.totitle1{font-size:20px;font-style:italic;color:#8E8E8E;display: none;}
+img.headerlogo{width:150px;display: block;}
+.logotable{height: 60px;}
+.title 
+{clear:both; 
+ font-size:15px;
+ font-weight:bold; 
+ border-bottom:2px #CCCCCC solid;
+ margin-top: 10px; 
+ margin-bottom:15px; }
+.hp1{font-size:1.3em;margin-bottom:0.3em;}
+div.insert{margin-top:15em;margin-bottom:1em;height:10%;width:100%;background:#C2FF68;background-repeat:repeat-x;}
+.bigp{font-size:18px;}
+img.img1{width:65%; height:60%;
+     }
+img.img2{width:55%;
+       height:50%;
+     }
+     img.img3{width:50%;
+       height:50%;
+     }
+ .ptitle{font-size:20px;text-align:center;margin-bottom:5px;}
+.products a {text-decoration:none;}
+table {border-collapse:collapse;}
+body{
+  background: #F0F0F0;
+}
+div.inner1{
+  margin-left:55px;
+  margin-top: 5%;
+  margin-bottom: 15px;
+  width:80%; 
+  height:300px;
+  border:1px solid #009966;
+  background: #FFF4C1;
+}
+div.inner4{
+  width:100%; 
+  height:25px;
+  background: #8C8C00;
+}
+div.logindiv{width:100%;height: 40%;}
+
+
+div.cart1{width:100%;}
+.pcart1{text-align:center;font-size:1.8em;margin-bottom:0.8em;}
+.cartfont{text-align:center;font-size:1.5em;}
+.cartul{float:left;width:45%;float:right;}
+.cartli{font-size:1.3em;color:#FF4500;}
+img.img4{float:left; width:45% ;height:40%;margin-left:10px;}
+div.login{margin-top:10px;width:100%;height:60%;border-style:solid;border-width:3px;border-color: #F4A460;}
+.logintable{width:60%;margin:10%;}
+.logintext{width: 100%;margin-left: 10px;}
+.logintable1{font-size:18px;color:red;}
+.logintable2{font-size:15px;}
+.loginbutton{width:100px;margin-left:30px;}
+a.two{
+  color:blue;
+  font-size:1.2em;
+}
+a.two:hover{ color: blue}
+a.one{
+  color:green;
+  font-size:1.5em;
+  padding-left: 1em;
+  display:none;
+}
+a.one:hover{ color: #FF00FF;}
+.headerselect{margin-left:30%;display:block;height: 30px; width: 40%; line-height: 25px;}
+.loginhead1{font-size:1.2em;}
+div.ordertable{width:100%;}
+div.registerdiv{width:100%;margin-top:20px;height:40%;}
+form.registerform{width:90%;background:#FFED97;}
+div.accountdiv{width:100%;height:50%;margin-bottom: 15px;}
+form.accountform{float:left;background:#fedcbd;height:70%;width:100%;}
+}
